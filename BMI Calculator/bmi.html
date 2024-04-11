@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+      <form id="bmiForm">
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" name="weight" required />
+
+        <label for="height">Height (cm):</label>
+        <input type="text" id="height" name="height" required />
+
+        <input type="submit" value="Calculate" />
+      </form>
+      <div id="result"></div>
+    </div>
+    <script src="bmi.js"></script>
+  </body>
 </html>
